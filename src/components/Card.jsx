@@ -8,7 +8,7 @@ function Card({ countries }) {
   const [inputV, setInputV] = useState("")
 
   const [result, setResult] = useState(0)
-  const [key, setkey] = useState("€")
+  const [key, setkey] = useState()
 
   
   const [isOpen2, setIsOpen2] = useState(false);
@@ -58,7 +58,7 @@ function Card({ countries }) {
     <>
       <div className="flex justify-center flex-wrap gap-7 m-40 ml-[150px] p-10 w-[1300px] border-black border-2">
         {/* <img src="" alt="" /> */}
-        <p className="absolute -ml-[1100px] mt-3">{key}</p>
+        <p className="absolute -ml-[1104px] mt-3">{key}-</p>
         <input
         onChange={(e) => {setInputV(e.target.value)}} 
           type="number"
@@ -208,3 +208,4 @@ function Card({ countries }) {
 }
 
 export default Card;
+
